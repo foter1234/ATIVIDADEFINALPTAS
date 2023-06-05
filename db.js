@@ -9,7 +9,7 @@ let connect = async function () {
     const pool = new Pool({
       connectionString: 'postgres://postgres:postgres@localhost/lucas'
     });
-
+//protocolo://usuario:senha@local do banco/nomedobanco
     global.connection = pool;
     return Promise.resolve(pool);
   } catch (error) {
